@@ -1,0 +1,34 @@
+{
+  "name": "realtimemarkdownviewer",
+  "version": "1.0.0",
+  "description": "My Own Real Time Markdown Editior",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shivoo29/SKJ-S-Markdown-Editor.git"
+  },
+  "keywords": [
+    "markdown",
+    "realtime",
+    "sharejs"
+  ],
+  "author": "Shivoo29",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "redis": "^0.10.3",
+    "share": "^0.6.3"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  },
+  "bugs": {
+    "url": "https://github.com/Shivoo29/SKJ-S-Markdown-Editor/issues"
+  },
+  "homepage": "https://github.com/Shivoo29/SKJ-S-Markdown-Editor#readme"
+}
