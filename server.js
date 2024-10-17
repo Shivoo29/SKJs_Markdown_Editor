@@ -11,7 +11,23 @@ var express = require('express');
     app.get('/', function(req, res) {
       res.render('pad');
     });
+    app.get('/(:id)', function(req, res) {
+      res.render('pad');
+    });
 
-    // listen on port 8000 (for localhost) or the port defined for heroku
+    // get sharejs dependencies
+    var sharejs = require('share');
+    require('redis');
+
+    // options for sharejs
+    var sharejs = {
+      db: {type: 'redis'},
+    };
+
+    // attach the express server to sharejs
+    sharejs.server.atach(app, options);
+
+
+    // listen on port 8091 (for localhost) or the port defined for heroku
     var port = process.env.PORT || 8091;
     app.listen(port);
